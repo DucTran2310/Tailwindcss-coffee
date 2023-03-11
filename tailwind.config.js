@@ -3,6 +3,9 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'xs': '480px'
+      },
       fontFamily: {
         Karla: ['Karla', 'sans-serif']
       },
@@ -41,6 +44,9 @@ module.exports = {
         'img-mugs9': 'url("./image/pink-ceramic.jpg")',
         'img-mugs10': 'url("./image/red-cup.jpg")',
         'img-mugs11': 'url("./image/winter-style.jpg")',
+        'img-mugs12': 'url("./image/magazine.jpg")',
+        'img-mugs13': 'url("./image/cup.jpg")',
+        'img-mugs14': 'url("./image/cup-coffee.jpg")',
       }
     },
   },
