@@ -5,9 +5,7 @@
 
 /* Custom css top menu item */
 .ct-top-menu-item {
-    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute 
-                        after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full
-                        after:lg:transition-all after:lg:ease-in-out after:lg:duration-300
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300
 }
 
 .ct-top-menu-item-active {
@@ -27,7 +25,7 @@
 }
 
 .ct-subheadline {
-    @apply flex justify-center items-center mb-24;
+    @apply flex justify-center items-center my-16;
 }
 
 .ct-subheadline-deco-line {
@@ -41,3 +39,51 @@
 .ct-button {
     @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90;
 }
+
+#root {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* ... */
+    perspective: 2px;
+}
+
+.ct-parallax,
+.ct-no-parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.ct-parallax {
+    height: 40vh;
+}
+
+.ct-no-parallax {
+    height: auto;
+    z-index: 999;
+    background: white;
+}
+
+.ct-parallax-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* ... */
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media screen(xl) {
+    .tqd-parallax {
+      height: 70vh;
+      transform-style: preserve-3d;
+    }
+    .tqd-parallax-image {
+      transform: translateZ(-1px) scale(1.5);
+    }
+  }

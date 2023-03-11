@@ -531,6 +531,10 @@ video {
   left: 50%;
 }
 
+.left-\[calc\(-50vw_\+_50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .right-3{
   right: 0.75rem;
 }
@@ -559,8 +563,8 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-24{
@@ -615,6 +619,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[100px\]{
+  height: 100px;
+}
+
 .h-\[130px\]{
   height: 130px;
 }
@@ -639,6 +647,10 @@ video {
   height: 100%;
 }
 
+.h-\[600px\]{
+  height: 600px;
+}
+
 .w-11\/12{
   width: 91.666667%;
 }
@@ -649,6 +661,10 @@ video {
 
 .w-\[100px\]{
   width: 100px;
+}
+
+.w-\[100vw\]{
+  width: 100vw;
 }
 
 .w-\[95\%\]{
@@ -733,16 +749,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .bg-gray-900{
@@ -788,6 +804,10 @@ video {
   background-image: url("./image/cup-coffee.jpg");
 }
 
+.bg-img-mugs15{
+  background-image: url("./image/parallax.jpg");
+}
+
 .bg-img-mugs2{
   background-image: url("./image/pink-grown-coffee.jpg");
 }
@@ -826,6 +846,10 @@ video {
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
 }
 
 .bg-bottom{
@@ -1053,7 +1077,8 @@ video {
 }
 
 .ct-subheadline{
-  margin-bottom: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1094,6 +1119,55 @@ video {
 
 .ct-button:hover{
   --tw-bg-opacity: 0.9;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* ... */
+  perspective: 2px;
+}
+
+.ct-parallax,
+.ct-no-parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.ct-parallax {
+  height: 40vh;
+}
+
+.ct-no-parallax {
+  height: auto;
+  z-index: 999;
+  background: white;
+}
+
+.ct-parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* ... */
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1280px) {
+  .tqd-parallax {
+    height: 70vh;
+    transform-style: preserve-3d;
+  }
+
+  .tqd-parallax-image {
+    transform: translateZ(-1px) scale(1.5);
+  }
 }
 
 .after\:absolute::after{

@@ -1,11 +1,14 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
+    screens: {
+      'xs': '480px',
+      ...defaultTheme.screens
+    },
     extend: {
-      screens: {
-        'xs': '480px'
-      },
       fontFamily: {
         Karla: ['Karla', 'sans-serif']
       },
@@ -47,6 +50,7 @@ module.exports = {
         'img-mugs12': 'url("./image/magazine.jpg")',
         'img-mugs13': 'url("./image/cup.jpg")',
         'img-mugs14': 'url("./image/cup-coffee.jpg")',
+        'img-mugs15': 'url("./image/parallax.jpg")',
       }
     },
   },
