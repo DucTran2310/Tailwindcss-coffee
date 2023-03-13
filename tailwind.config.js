@@ -51,6 +51,9 @@ module.exports = {
         'img-mugs13': 'url("./image/cup.jpg")',
         'img-mugs14': 'url("./image/cup-coffee.jpg")',
         'img-mugs15': 'url("./image/parallax.jpg")',
+        'img-mugs16': 'url("./image/store1.jpg")',
+        'img-mugs17': 'url("./image/store2.jpg")',
+        'img-mugs18': 'url("./image/store3.jpg")',
       }
     },
   },
