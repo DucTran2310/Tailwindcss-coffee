@@ -1,7 +1,7 @@
 {
   "name": "taiwind_css_coffee",
   "version": "1.0.0",
-  "description": "Learn taiwind css",
+  "description": "https://tailwindcss-coffee-adstar.web.app/",
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
