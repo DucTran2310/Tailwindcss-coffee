@@ -669,6 +669,10 @@ video {
   max-height: 54px;
 }
 
+.min-h-\[350px\]{
+  min-height: 350px;
+}
+
 .w-11\/12{
   width: 91.666667%;
 }
@@ -931,6 +935,11 @@ video {
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-6{
@@ -1578,6 +1587,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
   .lg\:items-center{
     align-items: center;
   }
@@ -1601,6 +1614,14 @@ video {
   .lg\:px-64{
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+
+  .lg\:pl-6{
+    padding-left: 1.5rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 }
 
