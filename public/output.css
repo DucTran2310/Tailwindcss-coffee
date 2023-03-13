@@ -563,8 +563,9 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .mb-24{
@@ -619,16 +620,16 @@ video {
   height: 1.5rem;
 }
 
-.h-\[100px\]{
-  height: 100px;
-}
-
 .h-\[130px\]{
   height: 130px;
 }
 
 .h-\[280px\]{
   height: 280px;
+}
+
+.h-\[300px\]{
+  height: 300px;
 }
 
 .h-\[380px\]{
@@ -639,16 +640,12 @@ video {
   height: 400px;
 }
 
-.h-\[530px\]{
-  height: 530px;
+.h-\[600px\]{
+  height: 600px;
 }
 
 .h-full{
   height: 100%;
-}
-
-.h-\[600px\]{
-  height: 600px;
 }
 
 .w-11\/12{
@@ -808,6 +805,10 @@ video {
   background-image: url("./image/parallax.jpg");
 }
 
+.bg-img-mugs16{
+  background-image: url("./image/store1.jpg");
+}
+
 .bg-img-mugs2{
   background-image: url("./image/pink-grown-coffee.jpg");
 }
@@ -842,6 +843,14 @@ video {
 
 .bg-slider-bg{
   background-image: url("./image/slider-bg.jpeg");
+}
+
+.bg-img-mugs17{
+  background-image: url("./image/store2.jpg");
+}
+
+.bg-img-mugs18{
+  background-image: url("./image/store3.jpg");
 }
 
 .bg-cover{
@@ -897,6 +906,10 @@ video {
   padding-left: 2rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -940,6 +953,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -962,6 +979,10 @@ video {
 
 .leading-7{
   line-height: 1.75rem;
+}
+
+.leading-\[18px\]{
+  line-height: 18px;
 }
 
 .tracking-widest{
@@ -1118,7 +1139,7 @@ video {
 }
 
 .ct-button:hover{
-  --tw-bg-opacity: 0.9;
+  --tw-bg-opacity: 0.95;
 }
 
 #root {
